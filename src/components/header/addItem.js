@@ -1,8 +1,16 @@
-const AddItem = () => {
+import { useState } from "react";
+
+const AddItem = (props) => {
+const {recieve} = props ;
+const [newData , setData] =  useState("")
+function sent(){
+  recieve(newData)
+}
+
   return (
     <>
-      <input type="text" id="myInput" placeholder="Title..." />
-      <span className="addBtn">Add</span>
+      <input type="text" id="myInput" value={newData} placeholder="Title..." onChange={(e)=>setData(e.target.value)} />
+      <span className="addBtn" onClick={sent}>Add</span>
     </>
   );
 };
