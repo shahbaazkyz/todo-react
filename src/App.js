@@ -21,17 +21,18 @@ function App() {
     },
 ]
 
-const recieved=(item)=>{
-  console.log(item)
-}
-// const [forchildtwo , setchild] = useState("learning") ;
-//  function newTask(item){
-//    setchild(item)
-//  }
+// const giveMe=(item)=>{
+//   console.log(item)
+// }
+
+ function newTask(item){
+  //  setchild(item)
+   console.log(item);
+ }
 
   return (
    <>
-    <Header newtask ={recieved}/>
+    <Header giveMe ={newTask}/>
     <TodoList tasks={listItem}/>
     {/* <ChildOne giveMe = {takeIt}/> */}
     {/* <ChildTwo takethis={forchildtwo}/> */}

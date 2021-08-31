@@ -1,9 +1,9 @@
 import AddItem from './addItem'
 const Header = (props) => {
-const {newTask} = props ;
+const {giveMe} = props ;
 
 function getTask(recievedTask){
-    newTask(recievedTask)
+    giveMe(recievedTask)
   }
 
     return ( 
